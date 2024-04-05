@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--Criando Formulários em HTML-->
+    <!-- metodo GET - envio publico-->
+    <!-- metodo POST - envio privado-->
+    <!--acao de onde os dados do formulario será gravado ou enviado-->
+    <form method="post" action="valida-form.html">
+        <label>Nome:</label>
+        <!--name é o dado que terá sua informacao-->
+        <input type="text" name="nome" placeholder="Digite o seu nome completo." required>
+        <hr>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Digite o seu email." required>
+        <hr>
+        <label>Senha:</label>
+        <input type="password" name="senha" placeholder="Digite sua senha." required>
+        <hr>
+        <h3>Selecione os itens que te agrada:</h3>
+        <input type="checkbox" name="favoritos-1" value="acao"><label> Ação</label><br>
+        <input type="checkbox" name="favotitos-2" value="comedia"><label> Comédia</label><br>
+        <input type="checkbox" name="favoritos-3" value="terror"><label> Terror</label><br>
+        <hr>
+        <h3>Selecione sua faixa de idade:</h3>
+        <input type="radio" name="idade" value="18_25"><label> 18 à 25</label><br>
+        <input type="radio" name="idade" value="26_35"><label> 26 à 35</label><br>
+        <input type="radio" name="idade" value="36_45"><label> 36 à 45</label>
+        <hr>
+        <label>Selecione uma Cidade</label>
+        <select name="cidade">
+            <option value="#" selected>- Selecione -</option>
+            <option value="sao_paulo">São Paulo</option>
+            <option value="osasco">Osasco</option>
+            <option value="guarulhos">Guarulhos</option>
+        </select>
+        <hr>
+        <label>Selecione um Estado (UF):</label>
+        <select name="uf" size="2"><!--para listBox inserir a propriedade size + qtd de itens para exibir na lista-->
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="mg">MG</option>
+            <option value="pe">PE</option>
+        </select>
+        <hr>
+        <label>Data de nascimento:</label>
+        <input type="date" name="dt_nasc">
+        <hr>
+        <label>Data e hora da consulta médica:</label>
+        <input type="datetime-local" name="dt_consulta">
+        <hr>
+        <label>Quantidade entre (0 à 10):</label>
+        <input type="number" name="quantidade_itens" min="0" max="10">
+        <hr>
+        <label>Avaliação:</label>
+        Pouco satisfeito
+        <input type="range" name="satisfacao" min="0" max="10">
+        Muito satisfeito
+        <hr>
+        <label>Descreva o assunto:</label>
+        <textarea name="assunto"></textarea>
+        <!-- passando dado oculto-->
+        <input type="hidden" name="contrato" value="Aceito lógico">
+
+
+        <!--value seria o texto a ser exibido no botao-->
+        <hr>
+        <input type="reset" value="Limpar"> | 
+        <input type="submit" name="envio-form" value="Enviar Já!!!">
+    </form>
+</body>
+</html>

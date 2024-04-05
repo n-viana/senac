@@ -1,0 +1,130 @@
+<DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title> Desenvolvedor Web</title>
+        <!--script-->
+        <script language="javascript">
+
+            //comentario em linha
+
+            /*
+                comentario em bloco
+                autor: Nerildo Viana
+                versao: 1.0
+            */
+           // outra forma de criar variavel
+
+/*
+            var titulo2;    
+            var nome2, aula2;
+
+            titulo = "construindo JS";
+            nome = "Fernando";
+
+            aula = new String ("01");
+
+            document.write("<h1>Nome:"+nome+"<br> Este é meu primeiro JS"+ "<br> aula - "+ aula + "</h1>");
+            alert(titulo + " " + nome + " " + aula); 
+        
+            titulo2 = "Js - variaveis declaradas sempre";
+            nome2 = "Nerildo V. Silva";
+            aula2 = "Nossa primeira aula de JS.";
+
+            alert(titulo2 + " - Nome:" + nome2 + " - " + aula2);
+            
+            // Programa de troca de cores
+            var cor1, cor2, troca; // Declare
+
+            cor1 ="azul";// Receba
+            cor2 ="verde";// Receba
+
+            // Processamento
+            troca = cor1;
+            cor1 = cor2;
+            cor2 = troca;
+
+            document.write("<h3>Cor 1 trocada é :"+ cor1 +"<br> Cor 2 trocada é :" + cor2 + "</h3>");// Saida
+*/
+            var a,b,c;
+
+            a = 9;
+            b = 8.6;
+            c = "texto";
+
+            document.write ("Esta variavel é um: " + a + " numero<br>");
+            document.write ("Esta variavel é um: " + b + " numero<br>");
+            document.write ("Esta variavel é um: " + c + " texto<br>");
+
+            c = 10;
+
+            somar = (a + c + b);
+            document.write ("As variaveis somadas é " + somar + ".<br>");
+
+            //contador inclemento
+            c = c + 1;
+            document.write ("Esta variavel é um: " + c + " <br>");
+            // ou
+            c ++;
+            document.write ("Esta variavel é um: " + c + " <br>");
+            // ou
+            ++ c;
+            document.write ("Esta variavel é um: " + c + " <br>");
+
+            //contador declemento
+            c = c - 1;
+            document.write ("Esta variavel é um: " + c + " <br>");
+            // ou
+            c --;
+            document.write ("Esta variavel é um: " + c + " <br>");
+            // ou
+            -- c;
+            document.write ("Esta variavel é um: " + c + " <br>");
+
+
+            c = 44.92;
+            // valor inteiro do numero
+            document.write("<br> valor inteiro de c é: " + parseInt(c));
+            // valor flutuante do numero
+            document.write("<br> valor inteiro de C é: " + parseFloat(c)); 
+
+            aux = Math.floor(c);
+            resto = c - aux;
+            document.write("<br> valor da fração é: " + resto);
+
+            //OU usando expressao regular
+            c = parseInt(/^[0-9]*?(?:[\.,])([0-9]*?)$/g.exec(c.toString())[1]);
+            document.write("<br> valor da fração de c é: " + c);   
+            
+            titulo = "construindo JS";
+            nome = "nerildo";
+
+            /* trabalhando com texto */
+            //convertendo letras em maiusculos
+                        
+            document.write("<br>" + nome.toUpperCase());
+
+            //convertendo letras em minusculos
+
+            document.write("<br>" + titulo.toLowerCase());  
+
+            // quantidade de carectere em um string
+            document.write("<br>Quantidade de caracter do meu nome: " + nome.length);
+
+            pais = "Brasil";    
+            cnpj = "11133366622278";    
+
+            //tras os caracter a part:    
+            document.write("<br>" + pais.substring(2,5));   
+
+            // tudo na mesma linha - Criando Mascara para CNPJ
+            document.write("<br>CNPJ:" + cnpj.substr(0,2) + "." + cnpj.substr(2,3) + "." 
+            + cnpj.substr(5,3) + "/" + cnpj.substr(8,4) + "-" + cnpj.substr(12,2) );
+
+            // Crie o do CPF a sua mascara 44
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
