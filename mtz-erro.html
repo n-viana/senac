@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        j = 0
+        let vetor = []
+        let matriz = new Array(3,3) // Cria uma matriz com 
+        vetor = ["nome","idade","sexo"]
+/*
+        matriz[0,0] = "Nerildo"
+        matriz[0,1] = 43
+        matriz[0,2] = "m"
+
+        matriz[1,0] = "Claudia"
+        matriz[1,1] = 42
+        matriz[1,2] = "f"
+
+        matriz[2,0] = "Laura"
+        matriz[2,1] = 11
+        matriz[2,2] = "f"
+
+        console.log(matriz)
+
+       document.write(matriz[0,0] +" | "+ matriz[0,1] +" | "+ matriz[0,2]+"<br>")
+*/
+        do{
+
+            for(i=0;i<vetor.length;i++){
+                matriz[j,i] = prompt("Digite " + vetor[i])
+            }
+      
+            for(i=0;i<vetor.length;i++){
+                
+            }
+            j++
+            //console.log("linha"+j)
+            console.log(matriz)
+            resp = prompt("digite 1 para sim e 2 para nao")
+
+        }while(resp == 1)
+
+        //console.log(matriz.length)
+/*
+        for(j=0;j<1;j++){
+            document.write(matriz[0,0] +" | "+ matriz[0,1] +" | "+ matriz[0,2]+"<br>") 
+        }
+*/ 
+
+    </script>
+    </head>
+    <body>
+</body>
+</html>
