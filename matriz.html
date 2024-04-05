@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+/*
+        let arrayBidimensional1 = [
+            [1,2,3,4 ],
+            [5,6,7,8]
+        ]
+
+        console.log(arrayBidimensional1)
+*/
+/*
+        let arrayBidimensional = [];
+        
+        arrayBidimensional[0] = ["João", "Souza", 20, "Direito"];
+        arrayBidimensional[1] = ["Maria", "Gonçalves", 21, "Medicina"];
+        console.log(arrayBidimensional);
+*/ 
+        let vetor = ["nome","idade","sexo"]
+        let matriz = []
+        i=0
+        do{
+            matriz[i] = [
+                prompt("Digite " + vetor[0]),
+                prompt("Digite " + vetor[1]),
+                prompt("Digite " + vetor[2])
+            ]
+            i++
+            resp = parseInt(prompt("Digite \n(1) - Sim;\n(2) - Não;"))
+
+            while((resp !== 1 && resp !== 2)){
+                resp = parseInt(prompt("Digite \n(1) - Sim;\n(2) - Não;"))
+            }
+        }while(resp == 1)
+        
+        //console.log(matriz)
+        
+        for(j=0;j<matriz.length;j++){
+            document.write(matriz[j][0] +" | "+ matriz[j][1] +" | "+ matriz[j][2] +"<br>") 
+        }
+
+    </script>
+    </head>
+    <body>
+</body>
+</html>
